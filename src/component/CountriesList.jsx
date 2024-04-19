@@ -36,7 +36,7 @@ const CountriesList = ({query}) => {
     <div className="countries-container">
         {
           rowData.filter((country)=>
-            country.name.common.toLocaleLowerCase().includes(query)
+            country.name.common.toLowerCase().includes(query) || country.region.toLowerCase().includes(query)
           ).map((country)=>{
             return (
                 <CountryCard key={country.name.common}

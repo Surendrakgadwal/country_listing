@@ -12,7 +12,7 @@ const Home = () => {
     <main className={`${isDark? 'dark': ''}`}>
         <div className="search-filter-container">
         <SearchBar setQuery = {setQuery}/>
-        <SelectMenu />
+        <SelectMenu setQuery={setQuery}/>
         </div>
         <CountriesList query = {query}/>
     </main>
