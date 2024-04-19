@@ -65,7 +65,7 @@ const Country = () => {
         }).catch((err)=>{
           setNotFound(true)
         })
-    },[countryName])
+    })
     
     if(notFound){
       return <div>Country Not found</div>
