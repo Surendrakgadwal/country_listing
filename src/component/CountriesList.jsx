@@ -27,7 +27,7 @@ const CountriesList = ({query}) => {
   },[])
 
 
-  if(rowData.length == 0){
+  if(rowData.length === 0){
     return <CountrySimmer />
   }
 
